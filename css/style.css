@@ -376,6 +376,14 @@ a {
   opacity: 0.4;
 }
 
+.quote__body::before {
+  content: open-quote;
+}
+
+.quote__body::after {
+  content: close-quote;
+}
+
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
