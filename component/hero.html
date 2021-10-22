@@ -5,12 +5,22 @@
       <p class="hero__tagline">Deploy your website in less than 60 seconds</p>
       <a href="#" class="btn btn--accent btn--stretch">get started</a>
     </header>
-    <img
-      class="hero__image"
-      src="images/banner.png"
-      alt=""
-      sizes=""
-      srcset=""
-    />
+    <picture>
+      <source
+        srcset="images/banner@2x.webp 2x, images/banner.webp"
+        type="image/webp"
+      />
+      <source
+        srcset="images/banner@2x.png 2x, images/banner.png 1x"
+        type="image/png"
+      />
+      <img
+        class="hero__image"
+        src="images/banner.png"
+        alt=""
+        sizes=""
+        srcset=""
+      />
+    </picture>
   </div>
 </section>
