@@ -260,7 +260,8 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
+  width: auto;
 }
 
 .input-group .btn {
@@ -648,5 +649,34 @@ a {
   }
   .hero__heading {
     margin-top: 0;
+  }
+}
+/* Domain */
+
+.domain .icon {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+.domain .input-group {
+  border: 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+  margin: 4rem auto 0;
+  max-width: 650px;
+}
+.domain__list {
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 60px);
+  justify-items: center;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+@media screen and (min-width: 768px) {
+  .domain__list {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
