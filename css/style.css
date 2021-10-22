@@ -295,29 +295,34 @@ a {
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
-  margin-left: 1rem;
+  padding: 1rem 2rem;
+}
+.card--primary .badge--primary {
+  background: #126de4;
   padding: 1rem 2rem;
 }
 /* Plans */
-
+.plan {
+  transition: transform 0.3s ease-out;
+}
 .plan__title {
   color: white;
   font-size: 2.4rem;
   font-weight: 500;
 }
 
-.plan .plan__price {
+.plan__price {
   font-size: 6rem;
 }
 
-.plan .plan__cycle {
+.plan__cycle {
   font-size: 2.4rem;
   font-weight: 300;
   margin-left: 1rem;
   opacity: 0.8;
 }
 
-.plan .plan__description {
+.plan__description {
   font-size: 2rem;
   font-weight: 300;
   display: block;
@@ -329,14 +334,19 @@ a {
 }
 .plan--popular .card__header::before {
   content: url(../images/popular.svg);
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   position: absolute;
   top: -10px;
   right: 5%;
 }
-
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
 @media screen and (min-width: 1024px) {
   .plan__title {
     font-size: 1.4rem;
@@ -352,6 +362,10 @@ a {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 
@@ -679,4 +693,14 @@ a {
   .domain__list {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Blocks */
+
+.plans {
+  gap: 8rem 4rem;
+}
+.plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
