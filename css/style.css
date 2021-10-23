@@ -194,7 +194,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 5vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -266,7 +266,7 @@ a {
   border: none;
   flex-grow: 1;
   padding: 1.5rem 2rem;
-  width: auto;
+  width: 0;
 }
 
 .input-group .btn {
@@ -453,10 +453,6 @@ a {
 
 /* Testimonials */
 
-.testimonial {
-  margin: 3rem;
-}
-
 .testimonial__image {
   position: relative;
   margin: 5rem;
@@ -515,7 +511,7 @@ a {
   }
   .callout .btn {
     justify-self: start;
-    margin-right: 0 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -581,6 +577,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Navigation Bar */
@@ -643,6 +640,9 @@ a {
   .nav__chevron {
     display: none;
   }
+  .nav__list_items {
+    border: 0;
+  }
   .nav__list_items > a {
     font-size: 1.6rem;
   }
@@ -687,11 +687,12 @@ a {
   display: grid;
   font-size: 2rem;
   font-weight: 600;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 60px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 60px);
   justify-items: center;
   margin: 2rem auto;
   max-width: 700px;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 768px) {
@@ -770,6 +771,7 @@ a {
 .footer {
   background: #232323;
   padding: 2rem;
+  padding-top: 12rem;
 }
 .footer__section {
   border-bottom: 1px solid #393939;
@@ -825,4 +827,13 @@ a {
   .footer__copyright {
     font-size: 1.5rem;
   }
+}
+
+/* Adjusting callout */
+
+.container .callout {
+  transform: translateY(5rem);
+}
+.callout__container {
+  padding: 0;
 }
